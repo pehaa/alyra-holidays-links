@@ -1,9 +1,10 @@
 "use strict"
-
 const container = document.getElementById("container")
+const form = document.getElementById("form")
+
 const listLinks = new ListLinks(container, defaultList)
 listLinks.init()
-const form = document.getElementById("form")
+
 // quand l'événement "submit" pour le formulaire est déclanché
 form.addEventListener("submit", (event) => {
   /* le code dans la linge ci-dessous previent le formulaire d'envoyer des données, 
